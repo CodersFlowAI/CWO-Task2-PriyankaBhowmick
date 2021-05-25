@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Law Enforcement Helpline</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css"/>
+  <script src="scripts.js"></script>
+</head>
+<body>
+    <input type="checkbox" id="check">
+  <label for="check">
+    <i class="fas fa-bars" id="btn"></i>
+    <i class="fas fa-times" id="cancel"></i>
+  </label>
+  <div class="sidebar">
+    <header>Menu</header>
+    <ul>
+      <li><a href="about.html" target="_blank"><i class="fas fa-question-circle"></i>About Us</a></li>
+      <li><a href="#" target="_blank"><i class="fas fa-link"></i>Initiatives</a></li>
+      <li><a href="events.html" target="_blank"><i class="fas fa-qrcode"></i>File Complaint</a></li>
+      <li><a href="vacancies.html" target="_blank"><i class="fas fa-sliders-h"></i>Resources</a></li>
+      <li><a href="services.html" target="_blank"><i class="fas fa-question-circle"></i>Volunteers</a></li>
+      <li><a href="contactus.html" target="_blank"><i class="fas fa-envelope"></i>Contact Us</a></li>
+      <li><a href="#" target="_blank"><i class="fas fa-link"></i>Helpline</a></li>
+    </ul>
+  </div>
+  <section>
+    <header>
+      <img class="logo" src="police2.jpg" alt="logo">
+      <nav>
+        <ul class="nav_links">
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown"><a href="#">File Complaint</a>
+            <ul class="dropdown-content">
+              <li><a href="#">Report Women/Child Related Crime</a></li>
+              <li><a href="#">Report other cyber crimes</a></li>
+              <li><a href="#">Report anonymously</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#">Cyber Volunteers</a>
+            <ul class="dropdown-content">
+              <li><a href="#">Cyber volunteer concept</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">Register as a Volunteer</a></li>
+              <li><a href="#">What is unlawful content</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#">About</a>
+            <ul class="dropdown-content">
+              <li><a href="#">Job Fraud</a></li>
+              <li><a href="#">Financial Fraud</a></li>
+              <li><a href="#">Matrimonial Fraud</a></li>
+              <li><a href="#">Safe use of Social Media Platform</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <a class="cta" href="#"><button>Contact US</button></a>
+      <a class="cta" href="#"><button>Sign Up</button></a>
+      <a class="cta" href="#"><button>Login</button></a>
+    </header>
+    <marquee width="100%" direction="left" height="100px" behavior="scroll" scrollamount="12">
+    <p style="color:red;font-size:30px;"><b>Please contact local police in case of an emergency or for reporting crimes other than cyber crimes.National police helpline number is 100. National women helpline number is 181.</b></p>
+    </marquee>
+    <h1>Law Enforcement Helpline Center</h1>
+    <div class="container-2">
+        <form id="Form1" method="post" action="form_handler.php">
+          <h3> Register to File Complaint</h3>
+          <input name="email" type="text" placeholder="Email" required>
+          <input name="password" type="password" placeholder="Password" required>
+          <input type="password" placeholder="Confirm Password" required>
+          <div class="btn-box">
+            <button type="button" id="Next1">Next</button>
+          </div>
+        </form>
+  
+        <form id="Form2" method="post" action="form_handler.php">
+          <h3> Personal Details</h3>
+          <input name="firstname" type="text" placeholder="First Name" required>
+          <input name="lastname" type="text" placeholder="Last Name" required>
+          <input name="gender" type="text" placeholder="Gender" required>
+          <input name="dob" type="text" placeholder="Date of Birth" required>
+          <div class="btn-box">
+            <button type="button" id="Back1">Back</button>
+            <button type="button" id="Next2">Next</button>
+          </div>
+        </form>
+  
+        <form id="Form3" method="post" action="form_handler.php">
+          <h3> Contact Details</h3>
+          <input name="address" type="text" placeholder="Address" required>
+          <input name="city" type="text" placeholder="City" required>
+          <input name="state" type="text" placeholder="State" required>
+          <input name="mobileno" type="text" placeholder="Mobile No." required>
+          <div class="btn-box">
+            <button type="button" id="Back2">Back</button>
+            <button type="button" id="Next3">Next</button>
+          </div>
+        </form>
+  
+        <form id="Form4" method="post" action="form_handler.php" onsubmit="return validate()">
+          <h3> Crime Details</h3>
+          <input name="typeofcrime" type="text" placeholder="Type of Crime" required>
+          <input name="elaborate" type="text" placeholder="Elaborate" required>
+          <div class="btn-box">
+            <button type="button" id="Back3">Back</button>
+            <button type="submit" id="Submit">Submit</button>
+          </div>
+        </form>
+  
+        <div class="step-row">
+          <div id="progress"></div>
+          <div class="step-col"><small>Step1</small></div>
+          <div class="step-col"><small>Step2</small></div>
+          <div class="step-col"><small>Step3</small></div>
+          <div class="step-col"><small>Step4</small></div>
+        </div>
+  
+      </div>
+      <footer class="footer">
+        <div class="container2">
+          <div class="row">
+            <div class="footer-col">
+              <h4>Law Enforcement Helpline Center</h4>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Affiliate Program</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Get Help</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Complain</a></li>
+                <li><a href="#">File Complaint about crime</a></li>
+                <li><a href="#">Know about Crime</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Cyber Volunteer</h4>
+              <ul>
+                <li><a href="#">Cyber Volunteer Concept</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Register as a Volunteer</a></li>
+                <li><a href="#">What is unlawful content</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>follow us</h4>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+     </footer>
+      <script>
+        var Form1=document.getElementById("Form1");
+        var Form2=document.getElementById("Form2");
+        var Form3=document.getElementById("Form3");
+        
+        var Next1=document.getElementById("Next1");
+        var Next2=document.getElementById("Next2");
+        var Next3=document.getElementById("Next3");
+        var Back1=document.getElementById("Back1");
+        var Back2=document.getElementById("Back2");
+        var Back3=document.getElementById("Back3");
+        var progress=document.getElementById("progress");
+        
+        Next1.onclick=function(){
+            Form1.style.left="-450px";
+            Form2.style.left="40px";
+            progress.style.width="180px";
+        }
+        Back1.onclick=function(){
+            Form1.style.left="40px";
+            Form2.style.left="450px";
+            progress.style.width="90px";
+        }
+        Next2.onclick=function(){
+            Form2.style.left="-450px";
+            Form3.style.left="40px";
+            progress.style.width="270px";
+        }
+        Back2.onclick=function(){
+            Form2.style.left="40px";
+            Form3.style.left="450px";
+            progress.style.width="180px";
+        }
+        Next3.onclick=function(){
+            Form3.style.left="-450px";
+            Form4.style.left="40px";
+            progress.style.width="360px";
+        }
+        Back3.onclick=function(){
+            Form3.style.left="40px";
+            Form4.style.left="450px";
+            progress.style.width="270px";
+        }
+        function validate(){
+        alert('Complaint submitted');
+        return false;
+        }
+        </script>
+</body>
+</html>
