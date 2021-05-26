@@ -12,7 +12,7 @@ $mobileno = $_POST['mobileno'];
 $typeofcrime = $_POST['typeofcrime'];
 $elaborate = $_POST['elaborate'];
 
-$email_from ="palemeshinfinity@gmail.com";
+$email_from ="prynka.b01@gmail.com";
 $email_subject ="New Form Submission";
 $email_body ="User email: $email.\n". 
             "User password: $password.\n". 
@@ -26,7 +26,7 @@ $email_body ="User email: $email.\n".
             "User mobileno: $mobileno.\n". 
             "Type of crime to be reported: $typeofcrime.\n". 
             "Elaborate the crime: $elaborate.\n";
-$to ="prynka.b01@gmail.com";
+$to ="palemeshinfinity@gmail.com";
 $headers ="From: $email_from \r\n";
 $headers. ="Reply-To: $email \r\n";
 mail($to,$email_subject,$email_body,$headers);
